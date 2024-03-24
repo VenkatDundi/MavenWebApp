@@ -16,6 +16,18 @@
   	<description></description>
   	<servlet-class>com.venkat.web.getCandidateController</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>getWinnerController</servlet-name>
+  	<display-name>getWinnerController</display-name>
+  	<description></description>
+  	<servlet-class>com.venkat.web.getWinnerController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>getContestantController</servlet-name>
+  	<display-name>getContestantController</display-name>
+  	<description></description>
+  	<servlet-class>com.venkat.web.getContestantController</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>GetGenderController</servlet-name>
   	<url-pattern>/getGenderResult</url-pattern>
@@ -23,6 +35,14 @@
   <servlet-mapping>
   	<servlet-name>getCandidateController</servlet-name>
   	<url-pattern>/getCandidate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>getWinnerController</servlet-name>
+  	<url-pattern>/getWinner</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>getContestantController</servlet-name>
+  	<url-pattern>/getContestant</url-pattern>
   </servlet-mapping>
   
   <welcome-file-list>

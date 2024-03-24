@@ -1,4 +1,4 @@
-package com.venkat.web.model;
+	package com.venkat.web.model;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -19,6 +19,8 @@ public class Election {
 	 private String DepositStatus;	 private String Result;
 	 private ArrayList<ArrayList<String>> counter;
 	 private ArrayList<ArrayList<String>> x;
+	 private ArrayList<ArrayList<String>> w;
+	 private ArrayList<ArrayList<String>> c;
 	
 	public String getState() {
 		return State;
@@ -131,6 +133,24 @@ public class Election {
 		return x;
 	}
 	
+	
+	public void setWinner(ArrayList<ArrayList<String>> wins) {
+		w = wins;
+	}
+	
+	public ArrayList<ArrayList<String>> getWinner() {
+		return w;
+	}
+	
+	public void setContestant(ArrayList<ArrayList<String>> cons) {
+		c = cons;
+	}
+	
+	public ArrayList<ArrayList<String>> getContestant() {
+		return c;
+	}
+	
+		
 	@Override
 	public String toString() {
 		return "Election [State=" + State + ", Year=" + Year + ", Constituency=" + Constituency + ", CType=" + CType

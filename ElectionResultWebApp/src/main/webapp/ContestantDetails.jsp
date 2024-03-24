@@ -27,25 +27,47 @@
         </div> 
         
         <div style="margin-top: 2%;">  
-                <h2 class="ui black header" style="text-align:center;"> Participant Details </h2>
+                <h2 class="ui yellow header" style="text-align:center;"> Party Contestant Details </h2>
         </div>
          
-        <form name="passcandidatedetails" action="getCandidate" style="margin-top: 2%;margin-bottom: 2%;"> 
+        <form name="passcontestantdetails" action="getContestant" style="margin-top: 2%;margin-bottom: 2%;"> 
              
-            <div class="ui yellow padded segment" style="width: 50%;margin: 0 auto;text-align: justify;"> 
+            <div class="ui black padded segment" style="width: 50%;margin: 0 auto;text-align: justify;"> 
 
                 <table class="ui basic table"> 
                     <tr> 
                       <td> 
                         <div class="ui labeled input"> 
                           <div class="ui label"> 
-                            Enter Candidate Name 
-                          </div>
-                          <input type="text" placeholder="Search with Name.." name="candidate" required> 
+                            Enter Year 
+                          </div> 
+                          <input type="text" name='Year' placeholder="Enter here!" required> 
                         </div> 
-                      </td>
-                      <td></td>
-                      <td> <button class="medium ui orange button">Submit</button> </td>
+                      </td> 
+                    </tr> 
+                    <tr> 
+                      <td> 
+                        <div class="ui labeled input"> 
+                          <div class="ui label"> 
+                            Enter Party Abbreviation 
+                          </div> 
+                          <input type="text" name='Party' placeholder="Enter here!" required> 
+                        </div> 
+                      </td> 
+                    </tr> 
+                    <tr> 
+                      <td> 
+                        <div class="ui labeled input"> 
+                          <div class="ui label"> 
+                            Enter State 
+                          </div> 
+                          <input type="text" name='State' placeholder="Enter here!" required> 
+                        </div> 
+                      </td> 
+                    </tr> 
+                   
+                    <tr> 
+                      <td> <button class="medium ui orange button">Submit</button> </td> 
                     </tr> 
                 </table> 
             </div> 

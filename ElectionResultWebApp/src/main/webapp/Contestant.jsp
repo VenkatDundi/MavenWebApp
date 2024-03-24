@@ -22,11 +22,11 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"></script> 
          
     </head> 
-    <body>
+    <body style="margin-bottom:2%;">
     	
     	<%
 			
-			ArrayList<ArrayList<String>> rc = (ArrayList<ArrayList<String>>)session.getAttribute("candidate_details");
+			ArrayList<ArrayList<String>> rc = (ArrayList<ArrayList<String>>)session.getAttribute("candidate_contestant");
 		
 		%> 
      
@@ -37,27 +37,29 @@
         </div> 
         
         <div style="margin-top: 2%;margin-bottom:2%;">  
-                <h2 class="ui yellow header" style="text-align:center;"> Participant Details By Candidate Name </h2>
+                <h2 class="ui brown header" style="text-align:center;"> Contestants Details By Year, State, and Party </h2>
         </div>
-     
-		<form style="margin-left:85%;margin-bottom:2%;" action="index.jsp">
+        
+        <form style="margin-left:85%;margin-bottom:2%;" action="index.jsp">
 			<button class="ui icon button">
 			  <i class="home icon"></i>
 			</button>
-		</form>
+		</form> 
         
 		<div class="ui padded segment" style="width: 80%;margin: 0 auto;text-align:justify;"> 
-                <table class="ui blue celled table"> 
+                <table class="ui white celled table"> 
                     <thead> 
                           <tr> 
-                              	<th>Year</th>
-								<th>State</th>
-								<th>Constituency</th>
-								<th>Candidate</th>
-								<th>Gender</th>
-								<th>Political Party</th>
-								<th>Votes Polled</th>
-								<th>Result</th>
+                              <th>Year</th> 
+                              <th>State</th> 
+                              <th>Constituency</th>
+                              <th>Candidate</th>
+                              <th>Gender</th>
+                              <th>Party Abbreviation</th>
+                              <th>Votes Polled</th>
+                              <th>Total Votes</th>
+                              <th>Vote Share</th>
+                              <th>Result</th>
                           </tr> 
                     </thead> 
 					<tbody> 
@@ -76,7 +78,3 @@
         </div> 
     </body> 
 </html>
-
-
-
-

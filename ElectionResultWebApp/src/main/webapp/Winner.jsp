@@ -26,7 +26,7 @@
     	
     	<%
 			
-			ArrayList<ArrayList<String>> rc = (ArrayList<ArrayList<String>>)session.getAttribute("candidate_details");
+			ArrayList<ArrayList<String>> rc = (ArrayList<ArrayList<String>>)session.getAttribute("candidate_winner");
 		
 		%> 
      
@@ -37,27 +37,26 @@
         </div> 
         
         <div style="margin-top: 2%;margin-bottom:2%;">  
-                <h2 class="ui yellow header" style="text-align:center;"> Participant Details By Candidate Name </h2>
+                <h2 class="ui yellow header" style="text-align:center;"> Winning Candidate By Year, State and Constituency </h2>
         </div>
-     
-		<form style="margin-left:85%;margin-bottom:2%;" action="index.jsp">
+        
+        <form style="margin-left:85%;margin-bottom:2%;" action="index.jsp">
 			<button class="ui icon button">
 			  <i class="home icon"></i>
 			</button>
-		</form>
+		</form> 
         
 		<div class="ui padded segment" style="width: 80%;margin: 0 auto;text-align:justify;"> 
                 <table class="ui blue celled table"> 
                     <thead> 
                           <tr> 
-                              	<th>Year</th>
-								<th>State</th>
-								<th>Constituency</th>
-								<th>Candidate</th>
-								<th>Gender</th>
-								<th>Political Party</th>
-								<th>Votes Polled</th>
-								<th>Result</th>
+                              <th>Year</th> 
+                              <th>State</th> 
+                              <th>Constituency</th>
+                              <th>Candidate</th>
+                              <th>Party</th>
+                              <th>Votes Polled</th>
+                              <th>Margin</th>
                           </tr> 
                     </thead> 
 					<tbody> 
@@ -76,7 +75,3 @@
         </div> 
     </body> 
 </html>
-
-
-
-
