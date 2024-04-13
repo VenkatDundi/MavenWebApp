@@ -104,4 +104,4 @@ In our project, 4 servlet mappings have been defined, with each request mapping 
 
 ![Candidate](ElectionResultWebApp/ScreenShots/Party.png)  
 
-[View More ScreenShots](README.md#snapshots)
+[View More ScreenShots](ElectionResultWebApp/ScreenShots)
